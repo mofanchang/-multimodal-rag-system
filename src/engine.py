@@ -16,7 +16,7 @@ class RAGEngine:
         self.gen_tokenizer = None
         self.gen_model = None
         
-    def initialize_models(self, model_id="Qwen/Qwen2.5-1.5B-Instruct"):
+    def initialize_models(self, model_id="yentinglin/Llama-3-Taiwan-8B-Instruct"):
         # Reranker
         self.reranker = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')
         
