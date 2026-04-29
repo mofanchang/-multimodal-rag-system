@@ -24,7 +24,7 @@ graph TD
         F --> G{ChromaDB 檢索 Top-K}
         E --> G
         G --> H(CrossEncoder Reranker 二次排序)
-        H --> I(Qwen2.5 1.5B / Llama-3 8B)
+        H --> I(Llama-3-Taiwan 8B)
         I --> J[最終解答]
     end
 ```
