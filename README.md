@@ -6,7 +6,7 @@
 
 ```mermaid
 graph TD
-    subgraph 資料前處理 (Data Ingestion)
+    subgraph Data_Ingestion ["資料前處理 (Data Ingestion)"]
         A1[文字文件] --> B1(直接提取)
         A2[圖片資料] --> B2(Qwen2-VL InternVL2)
         A3[音訊資料] --> B3(OpenAI Whisper)
@@ -19,7 +19,7 @@ graph TD
     C --> D(SentenceTransformer MPNet)
     D --> E[(ChromaDB 向量資料庫)]
 
-    subgraph 檢索與生成 (Retrieval & Generation)
+    subgraph Retrieval_Generation ["檢索與生成 (Retrieval & Generation)"]
         Q[使用者提問] --> F(SentenceTransformer MPNet)
         F --> G{ChromaDB 檢索 Top-K}
         E --> G
